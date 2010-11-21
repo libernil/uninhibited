@@ -1,4 +1,5 @@
 require 'rspec'
+require 'rspec/core/formatters/documentation_formatter'
 require 'uninhibited/background_metadata'
 require 'uninhibited/feature'
 require 'uninhibited/formatter'
