@@ -1,5 +1,13 @@
 require 'spec_helper'
 
+describe "smoke test" do
+  it "should be loadable" do
+    lib = File.expand_path("../../lib/uninhibited.rb", __FILE__)
+    stdin, stdout, stderr, pid = Open3.popen3("ruby #{lib}")
+    stderr.readlines.should == []
+  end
+end
+
 describe Uninhibited do
   def example_group
     RSpec::Core::ExampleGroup.describe 

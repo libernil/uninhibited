@@ -1,4 +1,5 @@
 require File.expand_path('../../lib/uninhibited', __FILE__)
+require 'open3'
 
 RSpec.configure do |c|
   c.before(:each) do
